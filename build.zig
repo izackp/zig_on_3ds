@@ -30,7 +30,7 @@ pub fn build(b: *Builder) void {
     exe.bundle_compiler_rt = false;
     exe.link_function_sections = true;
     exe.omit_frame_pointer = true;
-    //exe.libc_file = @import("std").build.FileSource{.path = "libc.config"};
+    exe.libc_file = @import("std").build.FileSource{.path = "libc.config"};
     exe.addSystemIncludeDir("/opt/devkitpro/devkitARM/arm-none-eabi/include");
     exe.single_threaded = true;
     exe.link_emit_relocs = true;
