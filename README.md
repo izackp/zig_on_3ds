@@ -4,7 +4,6 @@ All compiling/notes/paths are based on having these things installed on a Macos 
 * https://devkitpro.org/wiki/Getting_Started
 * zig (master branch)
 
-[steps.md](steps.md) contains verbose output of the makefile provided from devkitpro when compiling, linking, and building a 3ds binary
 
 Currently some parts that I _feel_ are missing:
 * 3dsx.specs should be passed to the linker
@@ -30,6 +29,8 @@ Possible ways to move forward:
 * Look through zig git history and see how some platforms are added.
 * Don't provide a 'libc' to zig and manually link libraries in [steps.md](steps.md).
 * Investigate libc file for zig.. maybe there are settings that I'm missing.
+* Use devkitpro tools to link; example project: [zig-wii](https://github.com/fengb/zig-wii)
 
 Notes:
 - zig build-obj will build a mach-o binary instead of an elf32-littlearm
+- [steps.md](steps.md) contains verbose output of the makefile provided from devkitpro when compiling, linking, and building a 3ds binary
