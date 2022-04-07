@@ -1,0 +1,1 @@
+zig build --verbose-link -Dtarget=arm-freestanding-eabihf -Dcpu=mpcore --verbose
