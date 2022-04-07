@@ -2,7 +2,7 @@
 
 All compiling/notes/paths are based on having these things installed on a Macos (arm64):
 * https://devkitpro.org/wiki/Getting_Started
-* zig
+* zig (master branch)
 
 [steps.md](steps.md) contains verbose output of the makefile provided from devkitpro when compiling, linking, and building a 3ds binary
 
