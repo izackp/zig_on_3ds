@@ -32,5 +32,5 @@ Possible ways to move forward:
 * Use devkitpro tools to link; example project: [zig-wii](https://github.com/fengb/zig-wii)
 
 Notes:
-- zig build-obj will build a mach-o binary instead of an elf32-littlearm
+- zig build-obj with the -Dtarget=arm-freestanding-eabihf -Dcpu=mpcore flags will still build a mach-o binary instead of an elf32-littlearm
 - [steps.md](steps.md) contains verbose output of the makefile provided from devkitpro when compiling, linking, and building a 3ds binary
