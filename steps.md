@@ -1,3 +1,4 @@
+```
 mkdir -p build
 /Applications/Xcode.app/Contents/Developer/usr/bin/make --no-print-directory -C build -f /Users/isaacpaul/Projects/3ds/read-controls/Makefile
 main.c
@@ -9,8 +10,10 @@ smdhtool --create "read-controls" "Built with devkitARM & libctru" "Unspecified 
 built ... read-controls.smdh
 3dsxtool /Users/isaacpaul/Projects/3ds/read-controls/read-controls.elf /Users/isaacpaul/Projects/3ds/read-controls/read-controls.3dsx --smdh=/Users/isaacpaul/Projects/3ds/read-controls/read-controls.smdh
 built ... read-controls.3dsx
+```
 
 verbose linker:
+```
 /opt/devkitpro/devkitARM/bin/arm-none-eabi-gcc --verbose -specs=3dsx.specs -g -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -Wl,-Map,read-controls.map      /Users/isaacpaul/Projects/3ds/read-controls/build/main.o   -L/opt/devkitpro/libctru/lib -lctru -lm -o /Users/isaacpaul/Projects/3ds/read-controls/read-controls.elf
 
 Using built-in specs.
@@ -63,3 +66,5 @@ COLLECT_GCC_OPTIONS='-v' '-specs=3dsx.specs' '-g'  '-mtune=mpcore' '-mfloat-abi=
   /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/11.1.0/armv6k/fpu/crtn.o
 
 COLLECT_GCC_OPTIONS='-v' '-specs=3dsx.specs' '-g'  '-mtune=mpcore' '-mfloat-abi=hard' '-mtp=soft' '-L/opt/devkitpro/libctru/lib' '-o' '/Users/isaacpaul/Projects/3ds/read-controls/read-controls.elf' '-marm' '-march=armv6k' '-dumpdir' '/Users/isaacpaul/Projects/3ds/read-controls/read-controls.elf.'
+
+```
