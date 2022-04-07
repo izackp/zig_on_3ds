@@ -8,6 +8,7 @@ All compiling/notes/paths are based on having these things installed on a Macos 
 
 Currently some parts that I _feel_ are missing:
 * 3dsx.specs should be passed to the linker
+* devkitpro linker seems to provide these libs by default: -lgcc -lg -lc -lsysbase
 
 Currently stuck on:
 ```sh
